@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- link material design icons -->
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css">
+    <!-- link de fuente de letra -->
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+    <!-- mi css -->
+    <link rel="stylesheet" href="menu.css">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    
+    
+    
+
+
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5">
+        <div class="container-fluid">
+            <a class="navbar-brand letra" href="index.html">
+                <img src="img/IFA.png" alt="logo" width="55" height="55">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link letra" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link letra" href="#acercademi">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link letra" href="#curriculumn">Curriculum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link letra" href="#contactame">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <section class="galeria">
+        <h1>Chombas ralladas de adulto</h1>
+       
+        <div id="gallery" class="container-fluid">
+            <img src="chombas-de-adulto-ralladas/1.png" alt="" class="img-fluid lazy" data-src="chombas-de-adulto-ralladas/1.png">
+            <img src="chombas-de-adulto-ralladas/2.png" alt="" class="img-fluid lazy" data-src="chombas-de-adulto-ralladas/2.png">
+            <img src="chombas-de-adulto-ralladas/3.png" alt="" class="img-fluid lazy" data-src="chombas-de-adulto-ralladas/3.png">
+            <!-- <video class="vid" controls>
+                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                    type="video/mp4">
+                </source>
+            </video> -->
+            <img src="chombas-de-adulto-ralladas/4.png" alt="" class="img-fluid lazy" data-src="chombas-de-adulto-ralladas/4.png">
+            <img src="chombas-de-adulto-ralladas/5.png" alt="" class="img-fluid lazy" data-src="chombas-de-adulto-ralladas/5.png">
+            <img src="chombas-de-adulto-ralladas/6.png" alt="" class="img-fluid lazy" data-src="chombas-de-adulto-ralladas/6.png">
+            <img src="chombas-de-adulto-ralladas/7.png" alt="" class="img-fluid lazy" data-src="chombas-de-adulto-ralladas/7.png">
+            <img src="chombas-de-adulto-ralladas/8.jpg" alt="" class="img-fluid lazy" data-src="chombas-de-adulto-ralladas/8.jpg">
+            <img src="chombas-de-adulto-ralladas/9.jpg" alt="" class="img-fluid lazy" data-src="chombas-de-adulto-ralladas/9.jpg">
+            <img src="chombas-de-adulto-ralladas/10.jpg" alt="" class="img-fluid lazy" data-src="chombas-de-adulto-ralladas/10.jpg">
+            <img src="chombas-de-adulto-ralladas/11.jpg" alt="" class="img-fluid lazy" data-src="chombas-de-adulto-ralladas/11.jpg">
+            <img src="chombas-de-adulto-ralladas/12.jpg" alt="" class="img-fluid lazy" data-src="chombas-de-adulto-ralladas/12.jpg">
+            <img src="chombas-de-adulto-ralladas/13.jpg" alt="" class="img-fluid lazy" data-src="chombas-de-adulto-ralladas/13.jpg">
+            <img src="chombas-de-adulto-ralladas/14.jpg" alt="" class="img-fluid lazy" data-src="chombas-de-adulto-ralladas/14.jpg">
+            <img src="chombas-de-adulto-ralladas/15.jpg" alt="" class="img-fluid lazy" data-src="chombas-de-adulto-ralladas/15.jpg">
+            <img src="chombas-de-adulto-ralladas/16.jpg" alt="" class="img-fluid lazy" data-src="chombas-de-adulto-ralladas/16.jpg">
+            <img src="chombas-de-adulto-ralladas/17.jpg" alt="" class="img-fluid lazy" data-src="chombas-de-adulto-ralladas/17.jpg">
+            <img src="chombas-de-adulto-ralladas/18.jpg" alt="" class="img-fluid lazy" data-src="chombas-de-adulto-ralladas/18.jpg">
+            <img src="chombas-de-adulto-ralladas/19.jpg" alt="" class="img-fluid lazy" data-src="chombas-de-adulto-ralladas/19.jpg">
+
+        </div>
+    </section>    
+    
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var lazyImages = document.querySelectorAll(".img-fluid");
+    
+            lazyImages.forEach(function(img) {
+                img.addEventListener("load", function() {
+                    img.classList.remove("lazy");
+                });
+    
+                img.addEventListener("error", function() {
+                    // Manejar errores de carga de imagen si es necesario
+                });
+    
+                img.setAttribute("src", img.getAttribute("data-src"));
+            });
+        });
+    </script>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+    <script src="main.js"></script>
+    
+</body>
+
+</html>
