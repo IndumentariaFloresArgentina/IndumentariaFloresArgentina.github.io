@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+
+/*Entire HTML body*/
+body {
+  width: 100%;
+  background-color: transparent;
+  font-family: Lato;
+  font-size: 16px;
+  color: #000000;
+  font-weight: 400;
+  overflow-x: hidden;
+    background: url(img/pexels-aleksandar-pasaric-1820770.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.letra {
+  font-size: 22px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: aqua;
+}
+
+/* navbar */
+.navbar {
+  background-color: transparent !important;
+  position: fixed;
+  z-index: 100;
+}
+.nav-link:hover{
+  color: gold;
+}
+.navbar-brand:hover {
+  color: gold;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+h1 {
+    font-family: Satisfy;
+    font-size: 50px;
+    text-align: center;
+    color: #00abf0;
+    padding: 5%;
+}
+
+#gallery {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+}
+
+@media (max-width:1200px) {
+    #gallery {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+
+        -webkit-column-gap: 20px;
+        -moz-column-gap: 20px;
+        column-gap: 20px;
+    }
+}
+
+@media (max-width:800px) {
+    #gallery {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+
+        -webkit-column-gap: 20px;
+        -moz-column-gap: 20px;
+        column-gap: 20px;
+    }
+    h1 {
+      font-family: Satisfy;
+      font-size: 50px;
+      text-align: center;
+      color: #00abf0;
+      padding: 10%;
+  }
+  
+}
+
+@media (max-width:600px) {
+    #gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+    h1 {
+      font-family: Satisfy;
+      font-size: 50px;
+      text-align: center;
+      color: #00abf0;
+      padding: 19%;
+  }
+}
+
+#gallery img,
+#gallery video {
+    width: 100%;
+    height: auto;
+    margin: 4% auto;
+    box-shadow: -3px 5px 15px #000;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.navbar-toggler {
+  color: aliceblue;
+  position: fixed;
+  box-sizing: border-box;
+  margin: 20px;
+  padding: 0;
+  right: 0;
+  top: 2px;
+  width: 48px;
+  height: 48px;
+  
+}
+
+/* CSS DE Galería de Imágenes Responsive + Modal + Carrusel */
+
+#gallery img {
+  transition: all .3s ease;
+}
+
+
+#gallery img:hover {
+  cursor: pointer;
+  
+  box-shadow: 0 0 10px rgb(0, 0, 0, .5);
+  transform: scale(1.1);
+}
+
+#gallery img {
+  border-radius: 10px;
+}
+
+
+/* .galeria {
+padding-top: 75px;
+} */
+
+
+
+
